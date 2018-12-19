@@ -5,7 +5,7 @@ import * as parser from '../src/js/code-analyzer';
 describe('The javascript parser', () => {
     const result = parser.runParser('function name(x,y,z){}','1,2,3');
     it('is returning params correctly', () => {
-        console.log("---------------------------------------------------------"+result);
+         console.log("---------------------------------------------------------"+result);
         const firstParamName = result[0];
         assert.equal(firstParamName, 'function name(x,y,z){');
     });
